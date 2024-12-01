@@ -1,0 +1,177 @@
+/* General Reset and Body Styling */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Input Fields */
+input[type="text"], input[type="submit"] {
+    font-size: 1rem;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Search Form Styling */
+.searchForm {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.searchForm form {
+    display: flex;
+    align-items: center;
+}
+
+/* Table Styling */
+.tableClass {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.tableClass table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.tableClass th, .tableClass td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.tableClass th {
+    background-color: #f4f4f4;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tableClass tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tableClass tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table Action Links */
+.action-links a {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.action-links a:first-of-type {
+    color: #ffffff;
+}
+
+.action-links a:first-of-type:hover {
+    color: #218838;
+}
+
+.action-links a:last-of-type {
+    color: #dc3545;
+}
+
+.action-links a:last-of-type:hover {
+    color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tableClass table {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .searchForm form {
+        flex-direction: column;
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    gap: 15px; /* Increased gap to move buttons further away */
+    margin-top: 30px; /* Adds more space above the navbar */
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 12px 25px; /* Increased padding for more prominence */
+    font-size: 1.2rem; /* Slightly larger text */
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.logout-btn {
+    background-color: #dc3545;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Header Styling */
+.greeting h1 {
+    font-size: 1.8rem; /* Made the header slightly smaller */
+    padding: 15px 0;
+    text-align: center;
+    color: #333;
+}
